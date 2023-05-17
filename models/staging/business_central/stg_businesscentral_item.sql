@@ -1,3 +1,4 @@
 select 
-    *
-from {{ source('business_central', 'ITEM_CARD') }}
+    *,
+    "No" AS "item_id"
+from {{ source('business_central', 'ITEM_CARD') }} LIMIT 10
