@@ -6,3 +6,4 @@ sources:
     schema: BUSINESS_CENTRAL
     tables:
       - name: SANDBOX_CUSTOMER
+      - name: ITEM_CARD
