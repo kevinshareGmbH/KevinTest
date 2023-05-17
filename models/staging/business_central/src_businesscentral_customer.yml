@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: business_central
+    database: SHARE_DWH_RAW
+    schema: BUSINESS_CENTRAL
+    tables:
+      - name: SANDBOX_CUSTOMER
