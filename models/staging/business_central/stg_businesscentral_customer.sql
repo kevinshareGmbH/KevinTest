@@ -1,4 +1,3 @@
  select 
    *
- from SHARE_DWH_RAW.BUSINESS_CENTRAL.SANDBOX_CUSTOMER
-LIMIT 1000
+ from {{ source('business_central', 'SANDBOX_CUSTOMER') }}
