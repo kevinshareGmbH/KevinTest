@@ -1,0 +1,4 @@
+ select 
+   *
+ from SHARE_DWH_RAW.BUSINESS_CENTRAL.SANDBOX_CUSTOMER;
+
