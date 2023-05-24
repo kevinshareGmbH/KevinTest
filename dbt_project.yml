@@ -31,8 +31,16 @@ clean-targets:         # directories to be removed by `dbt clean`
 # In this example config, we tell dbt to build all models in the example/ directory
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
+
 models:
   staging:
+    +database: SHARE_DWH_MART_RAW
     business_central:
+      +schema: 'BUSINESS_CENTRAL'
       materialized: view
-      +schema: BUSINESS_CENTRAL
+
+  intermediate:
+      +database: SHARE_DWH_MART_DEV
+      +schema: 'INTERMEDIATE'
+      materialized: view
+      models:
