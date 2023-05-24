@@ -35,3 +35,4 @@ models:
   staging:
     business_central:
       materialized: view
+      +schema: BUSINESS_CENTRAL
