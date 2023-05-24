@@ -40,10 +40,10 @@ models:
         schema: business_central
         +materialized: view
     intermediate:
-        +database: SHARE_DWH_MART_DEV
+        #+database: SHARE_DWH_MART_DEV
         +schema: intermediate
         +materialized: view
     core:
-        +database: SHARE_DWH_MART_DEV
+        #+database: SHARE_DWH_MART_DEV
         +schema: core
         +materialized: view
