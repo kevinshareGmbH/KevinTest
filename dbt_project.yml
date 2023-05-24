@@ -43,7 +43,3 @@ models:
         #+database: SHARE_DWH_MART_DEV
         +schema: intermediate
         +materialized: view
-    core:
-        #+database: SHARE_DWH_MART_DEV
-        +schema: core
-        +materialized: view
