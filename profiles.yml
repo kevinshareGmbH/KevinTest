@@ -21,7 +21,7 @@ share:
       role: TRANSFORMER
       database: SHARE_DWH_MART_PROD
       warehouse: TRANFORMING
-      schema: PROD
+      schema: INTERMEDIATE
       threads: 5
       client_session_keep_alive: False
       #query_tag: "NA"
