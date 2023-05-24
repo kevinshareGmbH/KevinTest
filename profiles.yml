@@ -10,7 +10,7 @@ share:
       database: SHARE_DWH_MART_DEV
       warehouse: TRANFORMING
       schema: DEV
-      threads: 5
+      threads: 1
       client_session_keep_alive: False
       #query_tag: "NA"
     prod:
@@ -22,6 +22,6 @@ share:
       database: SHARE_DWH_MART_PROD
       warehouse: TRANFORMING
       schema: PROD
-      threads: 5
+      threads: 1
       client_session_keep_alive: False
       #query_tag: "NA"
