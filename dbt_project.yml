@@ -7,7 +7,7 @@ version: '1.0.0'
 config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'share'
+profile: share
 
 # These configurations specify where dbt should look for different types of files.
 # The `source-paths` config, for example, states that models in this project can be
@@ -37,9 +37,8 @@ models:
     staging:
       +database: SHARE_DWH_STAGING
       business_central:
-        schema: business_central
+        +schema: business_central
         +materialized: view
     intermediate:
-        #+database: SHARE_DWH_MART_DEV
         +schema: intermediate
         +materialized: view
