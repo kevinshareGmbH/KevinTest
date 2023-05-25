@@ -35,7 +35,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   kevin:
     staging:
-        +database: SHARE_DWH_STAGING 
+        #+database: SHARE_DWH_STAGING 
         business_central:
           +schema: business_central
           +materialized: view
