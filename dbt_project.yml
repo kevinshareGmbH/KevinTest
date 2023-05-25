@@ -2,12 +2,12 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'share'
+name: 'kevin'
 version: '1.0.0'
 config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'share'
+profile: 'kevin'
 
 # These configurations specify where dbt should look for different types of files.
 # The `source-paths` config, for example, states that models in this project can be
@@ -33,12 +33,15 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-   share:
+   kevin:
     staging:
-        database: SHARE_DWH_STAGING
+        +database: SHARE_DWH_STAGING
         business_central:
           +schema: business_central
           +materialized: view
     intermediate:
         +schema: intermediate
         +materialized: view
+    core:
+        +schema: core
+        +materialized: table
