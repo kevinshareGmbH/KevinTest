@@ -1,4 +1,4 @@
-kevin_test:
+kevin:
   target: dev
   outputs:
     dev:
